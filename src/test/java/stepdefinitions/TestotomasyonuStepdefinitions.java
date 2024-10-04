@@ -6,6 +6,7 @@ import org.openqa.selenium.Keys;
 import pages.TestotomasyonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class TestotomasyonuStepdefinitions {
 
@@ -47,5 +48,75 @@ public class TestotomasyonuStepdefinitions {
     @When("arama kutusuna baby yazip aratir")
     public void aramaKutusunaBabyYazipAratir() {
         testotomasyonPage.aramaKutusu.sendKeys("baby" + Keys.ENTER);
+    }
+
+    @When("arama kutusuna {string} yazip aratir")
+    public void aramaKutusunaYazipAratir(String aranacakElement) {
+
+        testotomasyonPage.aramaKutusu.sendKeys(aranacakElement + Keys.ENTER);
+    }
+
+    @And("{int} saniye bekler")
+    public void saniyeBekler(int beklenecekSure) {
+
+        ReusableMethods.bekle(beklenecekSure);
+    }
+
+    @Then("account linkini tiklar")
+    public void account_linkini_tiklar() {
+        testotomasyonPage.accountLinki.click();
+    }
+
+    @When("email olarak {string} girer")
+    public void email_olarak_girer(String configurationEmailTuru) {
+
+        testotomasyonPage.emailKutusu.sendKeys(  ConfigReader.getProperty(configurationEmailTuru)  );
+    }
+
+    @When("password olarak {string} girer")
+    public void password_olarak_girer(String configurationPasswordTuru) {
+        testotomasyonPage.passwordKutusu.sendKeys( ConfigReader.getProperty(configurationPasswordTuru));
+    }
+
+    @When("login butonuna basar")
+    public void login_butonuna_basar() {
+        testotomasyonPage.signInButonu.click();
+    }
+
+    @Then("basarili olarak giris yapilabildigini test eder")
+    public void basarili_olarak_giris_yapilabildigini_test_eder() {
+
+        Assertions.assertTrue(testotomasyonPage.signoutButonu.isDisplayed());
+
+    }
+
+    @Then("logout butonuna basar")
+    public void logout_butonuna_basar() {
+
+        testotomasyonPage.signoutButonu.click();
+
+    }
+
+    @And("giris yapilamadigini test eder")
+    public void girisYapilamadiginiTestEder() {
+
+        Assertions.assertTrue(testotomasyonPage.emailKutusu.isDisplayed());
+    }
+
+    @Given("kullanici {string} anasayfaya gider")
+    public void kullanici_anasayfaya_gider(String string) {
+
+    }
+    @Then("dogum tarihi ay acilir menuden {string} secer")
+    public void dogum_tarihi_ay_acilir_menuden_secer(String string) {
+
+    }
+    @Then("secilen ayin {string} oldugunu test eder")
+    public void secilen_ayin_oldugunu_test_eder(String string) {
+
+    }
+    @When("acilir menude toplam {int} option oldugunu test eder")
+    public void acilir_menude_toplam_option_oldugunu_test_eder(Integer int1) {
+
     }
 }
