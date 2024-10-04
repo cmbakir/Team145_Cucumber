@@ -41,5 +41,5 @@ public class ZeroPage {
 
     @FindBy(id="pc_currency")
     public WebElement currencyDropdownMenu;
-
+//bu sayfadaki elementler
 }
