@@ -104,19 +104,9 @@ public class TestotomasyonuStepdefinitions {
     }
 
     @Given("kullanici {string} anasayfaya gider")
-    public void kullanici_anasayfaya_gider(String string) {
+    public void kullanici_anasayfaya_gider(String configDosyasiUrl) {
 
+        Driver.getDriver().get(ConfigReader.getProperty(configDosyasiUrl));
     }
-    @Then("dogum tarihi ay acilir menuden {string} secer")
-    public void dogum_tarihi_ay_acilir_menuden_secer(String string) {
 
-    }
-    @Then("secilen ayin {string} oldugunu test eder")
-    public void secilen_ayin_oldugunu_test_eder(String string) {
-
-    }
-    @When("acilir menude toplam {int} option oldugunu test eder")
-    public void acilir_menude_toplam_option_oldugunu_test_eder(Integer int1) {
-
-    }
 }

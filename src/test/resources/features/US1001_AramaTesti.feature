@@ -1,4 +1,5 @@
 
+@ilkDeneme
 Feature: US1001 Arama Testi
 
   Scenario: TC01 kullanici phone arattiginda urun bulabilmeli

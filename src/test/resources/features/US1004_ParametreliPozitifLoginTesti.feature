@@ -1,6 +1,7 @@
 
 Feature: US1004 kullanici gecerli bilgilerle giris yapar
 
+  @ilkDeneme
   Scenario: TC08 kullanici gecerli bilgilerle giris yapabilmeli
 
     Given kullanici testotomasyonu anasayfaya gider
