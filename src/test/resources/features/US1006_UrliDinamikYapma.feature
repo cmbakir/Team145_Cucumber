@@ -1,7 +1,7 @@
 
 Feature: US1006 Dinamik Url kullanimi
 
-  @wip
+
   Scenario: TC12 kullanici url'i dinamik olarak girebilmeli
 
     Given kullanici "toFormUrl" anasayfaya gider
