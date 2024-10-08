@@ -1,7 +1,7 @@
 
 Feature: US1009 Kullanici elementleri kullanabilmek icin bekler
 
-@wip
+
   Scenario: TC15 kullanici elementlerin goruntulenmesini bekleyebilmeli
 
     Given kullanici "herokuUrl" anasayfaya gider
