@@ -9,4 +9,3 @@ Feature: US1006 Dinamik Url kullanimi
     Then dogum tarihi ay acilir menuden "Haziran" secer
     And secilen ayin "Haziran" oldugunu test eder
     When acilir menude toplam 13 option oldugunu test eder
-    And sayfayi kapatir

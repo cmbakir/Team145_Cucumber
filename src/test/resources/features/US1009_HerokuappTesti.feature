@@ -12,4 +12,3 @@ Feature: US1009 Kullanici elementleri kullanabilmek icin bekler
     And Add Remove Elements yazisinin gorunur oldugunu test eder
     And 2 saniye bekler
     Then Delete butonu’nun gorunur olmadigini test eder
-    And sayfayi kapatir

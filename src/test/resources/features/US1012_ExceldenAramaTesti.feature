@@ -8,7 +8,7 @@ Feature: US1012 Excel ile toplu arama
     Then urun excelindeki "<istenenSatir>" daki urunun min. miktarini ve urun ismini kaydeder
     And urun ismini testotomasyonu sayfasinda aratir ve bulunan sonuc sayisini kaydeder
     And bulunan sonuc sayisinin "<istenenSatir>" da verilen min. miktara esit veya daha fazla oldugunu test eder
-    And sayfayi kapatir
+
     Examples:
       |istenenSatir|
       |2           |

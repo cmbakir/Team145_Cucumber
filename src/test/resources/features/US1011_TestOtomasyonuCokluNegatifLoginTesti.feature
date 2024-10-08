@@ -11,7 +11,7 @@ Feature:US1011 kullanici yanlis bilgiler kullandiginda giris yapamaz
     Then login butonuna basar
     And giris yapilamadigini test eder
     And 1 saniye bekler
-    Then sayfayi kapatir
+
 
     Examples:
       |verilenEmail    	|verilenPassword    |

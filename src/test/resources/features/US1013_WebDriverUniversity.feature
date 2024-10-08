@@ -14,4 +14,3 @@ Feature: US1013 WebDriverUniversity negatif login testi
     When ilk windowa geri doner
     Then ilk windowa donuldugunu test eder
     And 3 saniye bekler
-    And sayfayi kapatir

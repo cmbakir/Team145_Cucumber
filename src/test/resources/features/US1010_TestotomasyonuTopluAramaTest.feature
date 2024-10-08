@@ -8,7 +8,7 @@ Feature: US1010 kullanici verilen listedeki tum urunler icin arama testi yapar
     Then arama kutusuna "<aranacakKelimeler>" yazip aratir
     And arama sonucunda urun bulunabildigini test eder
     Then 1 saniye bekler
-    And sayfayi kapatir
+
 
     Examples:
       |aranacakKelimeler|
