@@ -1,6 +1,7 @@
 
 Feature: US1005 gecersiz bilgilerle giris yapilamaz
 
+  @paralel1
   Scenario: TC09 gecersiz email ile giris yapilamamali
 
     Given kullanici testotomasyonu anasayfaya gider
@@ -12,7 +13,7 @@ Feature: US1005 gecersiz bilgilerle giris yapilamaz
     And 2 saniye bekler
 
 
-
+  @paralel2
   Scenario: TC10 gecersiz password ile giris yapilamamali
     Given kullanici testotomasyonu anasayfaya gider
     Then account linkini tiklar
